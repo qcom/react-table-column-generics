@@ -1,0 +1,32 @@
+{
+  "name": "react-table-column-generics",
+  "version": "0.0.1",
+  "description": "ideal generic implementation of reusable columns within react-table",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && webpack",
+    "start": "echo TBD"
+  },
+  "keywords": [],
+  "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.12.10",
+    "@babel/runtime": "^7.12.5",
+    "moment": "^2.24.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-table": "^7.7.0",
+    "typescript": "^4.2.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "@types/moment": "^2.13.0",
+    "@types/react-table": "^7.7.9",
+    "babel-loader": "^8.2.2",
+    "ts-loader": "^9.2.6",
+    "webpack": "^5.13.0",
+    "webpack-cli": "^4.3.1"
+  }
+}
