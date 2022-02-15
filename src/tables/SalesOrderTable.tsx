@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react'
 import { makeColumnBundler } from '../columns'
-import { SalesOrder } from '../types'
 import { ReactTable } from '../react-table'
+import { SalesOrder } from '../types'
 
 export const SalesOrderTable = ({ orders }: { orders: SalesOrder[] }) => {
 
@@ -11,9 +11,6 @@ export const SalesOrderTable = ({ orders }: { orders: SalesOrder[] }) => {
 	const memoizedColumns = useMemo(() => bundle, [])
 
 	return (
-		<ReactTable<SalesOrder>
-			data={data}
-			columns={memoizedColumns}
-		/>
+		<ReactTable<SalesOrder> data={data} columns={memoizedColumns} />
 	)
 }

@@ -3,9 +3,7 @@ import { makeColumnBundler } from '../columns'
 import { ReactTable } from '../react-table'
 import { Backorder } from '../types'
 
-export const BackorderTable = ({ orders }: {
-	orders: Backorder[],
-}) => {
+export const BackorderTable = ({ orders }: { orders: Backorder[] }) => {
 
 	const bundler = makeColumnBundler<Backorder>()
 	const bundle = bundler(['OrderDate','StepName'])
@@ -13,9 +11,6 @@ export const BackorderTable = ({ orders }: {
 	const memoizedColumns = useMemo(() => bundle, [])
 
 	return (
-		<ReactTable<Backorder>
-			data={orders}
-			columns={memoizedColumns}
-		/>
+		<ReactTable<Backorder> data={data} columns={memoizedColumns} />
 	)
 }

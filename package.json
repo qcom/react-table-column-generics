@@ -4,7 +4,7 @@
   "description": "ideal generic implementation of reusable columns within react-table",
   "main": "index.js",
   "scripts": {
-    "build": "tsc && webpack",
+    "build": "webpack",
     "start": "echo TBD"
   },
   "keywords": [],
