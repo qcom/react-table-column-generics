@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react'
-import { makeColumnBundler } from '../react-table/columns'
-import { ReactTable } from '../react-table/generic-tables'
+import { makeColumnBundler } from '../columns'
+import { ReactTable } from '../react-table'
 import { Backorder } from '../types'
 
 export const BackorderTable = ({ orders }: {

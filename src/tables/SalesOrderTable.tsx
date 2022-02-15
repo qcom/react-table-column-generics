@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react'
-import { makeColumnBundler } from '../react-table/columns'
+import { makeColumnBundler } from '../columns'
 import { SalesOrder } from '../types'
-import { ReactTable } from '../react-table/generic-tables'
+import { ReactTable } from '../react-table'
 
 export const SalesOrderTable = ({ orders }: { orders: SalesOrder[] }) => {
 
